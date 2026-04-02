@@ -1,0 +1,1 @@
+El laboratorio consiste en consumir APIs a través del backend desarrollado con Django. Asimismo, se realiza la validación de su correcto funcionamiento utilizando Postman. Posteriormente, se lleva a cabo la integración desde el frontend con Angular, aplicando buenas prácticas en el consumo de APIs.
