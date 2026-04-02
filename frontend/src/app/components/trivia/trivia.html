@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>Trivia</h1>
+  <p class="subtitulo">Preguntas y respuestas de cultura general</p>
+
+  <div *ngIf="cargando" class="cargando">Cargando preguntas...</div>
+  <p *ngIf="error" class="error">{{ error }}</p>
+
+  <div class="lista">
+    <div *ngFor="let p of preguntas; let i = index" class="card">
+
+      <div class="card-header">
+        <span class="numero">#{{ i + 1 }}</span>
+        <span class="categoria">{{ p.categoria }}</span>
+        <span class="badge" [ngClass]="getDificultadColor(p.dificultad)">
+          {{ p.dificultad }}
+        </span>
+      </div>
+
+      <p class="pregunta">{{ p.pregunta }}</p>
+
+      <div class="respuestas">
+        <div class="respuesta correcta">
+          <span class="icono">✓</span> {{ p.respuesta_correcta }}
+        </div>
+        <div *ngFor="let r of p.respuestas_incorrectas" class="respuesta incorrecta">
+          <span class="icono">✗</span> {{ r }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

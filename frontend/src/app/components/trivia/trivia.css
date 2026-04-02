@@ -1,0 +1,36 @@
+body {
+  background: #f5f0ff;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 40px 20px;
+}
+
+.container { max-width: 750px; margin: 0 auto; }
+
+h1 { color: #5b21b6; margin-bottom: 4px; }
+.subtitulo { color: #a78bca; margin-bottom: 30px; }
+.cargando { color: #a78bca; }
+
+.lista { display: flex; flex-direction: column; gap: 12px; }
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  border-left: 4px solid #7c3aed;
+}
+
+.card-header { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; }
+.numero { color: #c4b5d6; font-size: 0.75rem; }
+.categoria { color: #7c3aed; font-size: 0.75rem; }
+
+.badge { padding: 2px 8px; border-radius: 20px; font-size: 0.7rem; color: white; }
+.badge-easy   { background: #16a34a; }
+.badge-medium { background: #d97706; }
+.badge-hard   { background: #dc2626; }
+
+.pregunta { font-weight: 600; color: #3b1f6e; margin-bottom: 12px; }
+
+.respuestas { display: flex; flex-direction: column; gap: 6px; }
+.respuesta { padding: 7px 12px; border-radius: 8px; font-size: 0.88rem; }
+.correcta   { background: #f0fdf4; color: #15803d; }
+.incorrecta { background: #fef2f2; color: #b91c1c; }
